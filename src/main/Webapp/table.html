@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+   span.lable{
+       padding:0 10px;
+       boder-ridius:3px;
+       color: white;
+   }
+    span.success_lable{
+        background-color: green;
+    }
+   span.lose_lable{
+       background-color: red;
+   }
+    table{
+        width:100%;
+        border-collapse: collapse;
+    }
+    table th,table td{
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+    }
+   tbody tr:nth-child(odd) {
+       background-color: #f2f2f2;
+   }
+    a.btn{
+        background: #f44336;
+        color: white;
+        border-radius:10px;
+        padding: 10px 25px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+</style>
+<body>
+    <div>
+        <p>说明：以下为2010级学生名单，共4人，<span class="success_lable">成功加载3人</span>，<span class="lose_lable">警告：列表不包含降级学生。</span></p>
+        <table>
+        <tr>
+            <th>#</th>
+            <th>姓名</th>
+            <th>班级</th>
+            <th>Email</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>郭立新</th>
+            <th>软件工程2010级1班</th>
+            <th>guo@example.com</th>
+            <th>
+                <a href="#" class="btn">修改</a>
+                <a href="#"class="btn">删除</a>
+            </th>
+        </tr>
+        <tr>
+            <th>2</th>
+            <th>黄英</th>
+            <th>软件工程2010级1班</th>
+            <th>huang@example.com</th>
+            <th>
+                <a href="#" class="btn">修改</a>
+                <a href="#"class="btn">删除</a>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>吕慧玲</th>
+            <th>软件工程2010级2班</th>
+            <th>lv@example.com</th>
+            <th>
+                <a href="#" class="btn">修改</a>
+                <a href="#"class="btn">删除</a>
+        </tr>
+        </table>
+    </div>
+</body>
+</html>

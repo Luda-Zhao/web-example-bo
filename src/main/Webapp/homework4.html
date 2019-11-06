@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.css" rel="stylesheet">
+    <!--&lt;!&ndash;<link href="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js">&ndash;&gt;-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title></title>-->
+    <!--<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>-->
+    <!--<style>-->
+    <!--/*.absolute {*/-->
+    <!--/*position: absolute;*/-->
+    <!--/*right: 0px;*/-->
+    <!--/*align-items: center;*/-->
+    <!--/*}*/-->
+    <!--* {-->
+
+    <!--}-->
+
+    <!--.test ul {-->
+    <!--list-style-type: none;-->
+
+    <!--}-->
+
+    <!--.test ul li {-->
+
+    <!--float: right;-->
+    <!--width: 50px;-->
+    <!--height: 20px;-->
+    <!--border: 1px solid black;-->
+    <!--text-align: center;-->
+
+    <!--}-->
+
+    <!--.test ul li ul {-->
+    <!--display: none;-->
+    <!--transition: all 1s;-->
+
+    <!--}-->
+
+    <!--.test li:hover ul {-->
+    <!--display: block;-->
+    <!--}-->
+
+    <!--.test li :hover ul {-->
+    <!-&#45;&#45;moz-transform: rotate(-90deg);-->
+    <!--}-->
+    <style>
+        #box {
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.5s;
+            float: right;
+        }
+
+        #box:hover {
+            height: 250px;
+        }
+
+        #box ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #box ul li {
+            width: 50px;
+            height: 48px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px #ffffff;
+            background: #ffffff;
+            color: white;
+        }
+
+        #font {
+            font-size: 50px;
+
+
+        }
+
+        .move:hover  li i[id=font]{
+            transform: rotate(90deg);
+            transition: 0.5s;
+
+
+        }
+    </style>
+    <script src="jquery-2.0.0.min.js"></script>
+
+</head>
+
+<body>
+
+<div>
+    <div id="box" >
+        <ul id="u" class="move">
+            <li ><a href="#"><i class="material-icons" id="font">account_circle</i></a>
+            <li><a href="#"><i class="material-icons">create</i></a></li>
+            <li><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+            <li><a href="#"><i class="material-icons">close</i></a></li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+<script>
+
+            $("#u").mouseenter(function () {
+                $("#font").text("pie_chart");
+            })
+            $("#u").mouseleave(function(){
+                $("#font").text("account_circle")
+            })
+
+//    $("#font").text("pie_chart")
+
+
+    //    $(function(){
+    //        alert($("i").text());
+    //    })
+    //    $("#font").text('rotate_right');
+</script>
+</html>

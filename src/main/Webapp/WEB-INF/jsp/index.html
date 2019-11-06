@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+<form action="#" method="post" enctype="multipart/form-data" >
+    <div>
+        <p>个人信息</p>
+    </div>
+    <div>
+        用户名:<input type="text" required><br>
+        密码:<input type="password" required><br>
+        性别:<label>男<input type="radio"  name="Sex" value="male" /></label>
+             <label>女<input type="radio" name="Sex" value="female" /></label><br>
+        生日:<input type="date"/><br>
+        籍贯:<input list="province">
+                <datalist id="province">
+                    <option>哈尔滨</option>
+                    <option>沈阳</option>
+                    <option>长春</option>
+                </datalist><br>
+        学历:    <select>
+                     <option value ="null">未选择</option>
+                     <option value ="bachelor">学士 </option>
+                     <option value ="master">硕士</option>
+                     <option value="doctor">博士</option>
+                     <option value="else">其他</option>
+                 </select>
+    </div>
+    <div>
+        <p>其他信息</p>
+    </div>
+    <div>
+        <p>喜欢的课程：</p>
+    </div>
+    <div>
+        <label><input type="checkbox">Web开发技术</label><br>
+        <label><input type="checkbox">Java程序设计</label><br>
+        <label><input type="checkbox">数据库原理</label><br>
+        <label><input type="checkbox">系统分析与测试</label><br>
+    </div>
+    <div>
+
+            <input type="file" name="fileUpload" accept=".jpg,.png"/><br>
+            <input type="submit" value="提交" />
+            <input type="reset" value="重置"/>
+
+    </div>
+</form>
+</body>
+</html>
